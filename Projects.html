@@ -5,38 +5,42 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <title>Nguyen Le's Portfolio</title>
+        <script src="js/script.js"></script>
+        <title>Nguyen Le - Projects</title>
     </head>
     <body>
-        <nav class="navbar">
-            <div>
-                <a class="portfolio" href="#">Nguyen Le's Portfolio</a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Main Page</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="AboutMe.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="Contact.html">Contact (WIP)</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-inverse">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Nguyen Le</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Main</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="AboutMe.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" title="For Future Development">Disabled (hover for details)</a>
+                  </li>
+                </ul>
+              </div>
             </div>
         </nav>
-
-        
         <!-- Image Slideshow Carousels -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="ImageCarouselIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#ImageCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#ImageCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#ImageCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -49,72 +53,175 @@
                     <img src="Images/banner3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#ImageCarouselIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#ImageCarouselIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
         <div class="container">
             <h2 style="text-align: center;">Projects / Work</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">Sponsored EnWin Utilities</h4>
-                    <p>
-                        Created a Technical Project with a group in the Networking Technology Program at St. Clair College
-                        <img src="Images/EnWinBuilding.jpg">
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">Video of the Networking Program at St.Clair College</h4>
-                    <p>
-                        This video explains how this process of the project was made and being applied to the real world
-                        completing this project inside the program.
-                        <video width="100%" height="300" controls src="Images/Computer Systems Technology - Networking.mp4">
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">5 Phases of the Network Design Process</h4>
-                    <p>
-                        The Network Design Process was required to include the 5 stages in the
-                        Network Design Process Networking Process.
-                        
-                    </p>
-                    <div style="overflow-x:scroll">
-                        <img  src="Images/5StagesOfNetworkDesignProcessChart.PNG" >
+            <div class="card-group">
+                <div class="card">
+                  <img src="Images/Networking/EnWinBuilding.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sponsored EnWin Utilities</h5>
+                    <p class="card-text">Created a Technical Project with a group in the Networking Technology Program at St. Clair College.</p>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EnWinModal">
+                    Click to Learn More about this Project
+                  </button>
+                  <div class="modal fade" id="EnWinModal" tabindex="-1" aria-labelledby="EnWinModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="EnWinModalLabel">EnWin Utilities Networking Project</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Sponsored EnWin Utilities</h4>
+                                    <p>
+                                        Created a Technical Project with a group in the Networking Technology Program at St. Clair College
+                                        <img src="Images/Networking/EnWinBuilding.jpg">
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Video of the Networking Program at St.Clair College</h4>
+                                    <p>
+                                        This video explains how this process of the project was made and being applied to the real world
+                                        completing this project inside the program.
+                                        <video width="100%" height="300" controls src="Images/Networking/Computer Systems Technology - Networking.mp4">
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">5 Phases of the Network Design Process</h4>
+                                    <p>
+                                        The Network Design Process was required to include the 5 stages in the
+                                        Network Design Process Networking Process.
+                                        
+                                    </p>
+                                    <div style="overflow-x:scroll">
+                                        <img  src="Images/Networking/5StagesOfNetworkDesignProcessChart.PNG">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Organizational Chart</h4>
+                                    <p>
+                                        This is the Organizational Chart Mapping out the Positions of the Employers and their "ranking" Sample.
+                                        <img  src="Images/Networking/Organizational Chart.PNG" >
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Building Map Layout</h4>
+                                    <p>
+                                        This Represents the inside of the EnWin Utilities Building Map Layout Structure.
+                                        <img src="Images/Networking/BuildingMapLayout.PNG">
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Diagnostics & Statistics</h4>
+                                    <p>
+                                        Network Diagnostics when analyzing the traffic of the network servers.
+                                        <img src="Images/Networking/Diagnostics.PNG">
+                                    </p>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">Organizational Chart</h4>
-                    <p>
-                        This is the Organizational Chart Mapping out the Positions of the Employers and their "ranking" Sample.
-                        <img  src="Images/Organizational Chart.PNG" >
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">Building Map Layout</h4>
-                    <p>
-                        This Represents the inside of the EnWin Utilities Building Map Layout Structure.
-                        <img src="Images/BuildingMapLayout.PNG">
-                    </p>
-                </li>
-                <li class="list-group-item">
-                    <h4 style="text-align: center;">Diagnostics & Statistics</h4>
-                    <p>
-                        Network Diagnostics when analyzing the traffic of the network servers.
-                        <img src="Images/Diagnostics.PNG">
-                    </p>
-                </li>
-              </ul>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="Images/ISSA/International-Student-Services.png" class="card-img-top" alt="ISSALogo">
+                  <div class="card-body">
+                    <h5 class="card-title" >Re-Developed ISSA's Current Website</h5>
+                    <p class="card-text" >Re-Developed their existing website to our revised and approved rough wireframe and deploy to live server</p>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ISSAModal">
+                    Click to Learn More about this Project
+                  </button>
+                  <!-- Modal 2 for ISSA -->
+                  <div class="modal fade" id="ISSAModal" tabindex="-1" aria-labelledby="ISSAModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="ISSAModalLabel" >Re-built International-Student-Services Association's Current Website to our new version</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4 style="text-align: center;">Restructured their existing website and rearranged them on our rough Wireframe</h4>
+                                    <h5 style="text-align: center;">You can find the ISSA's live website <a href="https://internationalstudentsvc.org/">here!</a></h5>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6 col-md-6">
+                                                <p>Old View of the Client's Home Page
+                                                    <img src="Images/ISSA/OldHomePage.png" style="width: 100%;">
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <p>Old View of the Client's Contact Us Page
+                                                    <img src="Images/ISSA/OldContactUsPage.png" style="width: 100%;">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h5>Languages used for this Project: HTML, CSS, JavaScript, PHP</h5>
+                                            <figure class="col">
+                                                <p>html</p>
+                                                <img src="Images/icons/html.png" class="LanguageIcons">
+                                            </figure>
+                                            <figure class="col">
+                                                <p>css</p>
+                                                <img src="Images/icons/css.png" class="LanguageIcons">
+                                            </figure>
+                                            <figure class="col">
+                                                <p>JS</p>
+                                                <img src="Images/icons/js.png" class="LanguageIcons">
+                                            </figure>
+                                            <figure class="col">
+                                                <p>PHP</p>
+                                                <img src="Images/icons/php.png" class="LanguageIcons">
+                                            </figure>
+                                            <!-- <figure class="col">
+                                                <p>Angular</p>
+                                                <img src="Images/icons/angular.png" class="LanguageIcons">
+                                            </figure>
+                                            <figure class="col">
+                                                <p>Laravel</p>
+                                                <img src="Images/icons/laravel.png" class="LanguageIcons">
+                                            </figure>       -->
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
+
         <!-- Footer -->
         <footer class="container-fluid bg-dark text-white p-3">
             <div class="row d-flex justify-content-between">
                 <div class="col-12 col-md-6 text-center text-md-start">
-                    Nguyen Le's Portfolio Project<br>
+                    Nguyen Le's Portfolio<br>
                     1530 Grand Marais Rd. East<br>
                     Windsor, ON N8W 1W2<br>
                     Tel: (519) 992-7957<br>

@@ -6,3 +6,5 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+console.log('%cWelcome to my Portfolio', 'color: blue; font-size: 50px');
